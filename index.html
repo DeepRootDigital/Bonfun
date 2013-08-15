@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/59138cf6-6f30-458d-ba53-73aa9b77f73d.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/Jcarousel.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$('.pull').click(function() {
+				$('.nav-menu').toggle();
+			});
+	// This initialises carousels on the container elements specified, in this case, carousel1.
+	$(".carousel").CloudCarousel(		
+	{			
+		xPos: 128,
+		yPos: 32,
+		xRadius: 52,
+		yRadius: 32,
+		autoRotate: 'left',
+		autoRotateDelay: 3000,
+		bringToFront: true,
+	}
+	);
+});
+
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				
+			</div>
+			<div class="pull">
+			</div>
+			<div class="nav-menu">
+				<ul id="nav">
+					<li><a>Events</a></li>
+					<li><a>Get Social</a></li>
+					<li><a>Store Locator</a></li>
+					<li><a>Products</a></li>
+					<li><a>Blog</a></li>
+				</ul>
+			</div>
+			<div class="social-media">
+				<img src="images/instagram.png" alt="instagram">
+				<img src="images/facebook.png" alt="facebook">
+				<img src="images/twitter.png" alt="twitter">
+				<img src="images/linkedin.png" alt="linkedin">
+			</div>
+		</div>
+	</div>
+	<div class="slider-area">
+		<div class="slider">
+			<ul>
+				<li><img src="images/slide1.png"></li>
+			</ul>
+			<div class="flag">
+				<div class="carousel">            
+					<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+					<!-- You can place links around these images -->
+					<img class="cloudcarousel" src="images/red-wine.png" />
+					<img class="cloudcarousel" src="images/purple-wine.png"/>
+					<img class="cloudcarousel" src="images/white-wine.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="process-area">
+		<img src="images/process-button.png">
+	</div>
+
+</body>
+</html>

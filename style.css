@@ -1,7 +1,7 @@
 /*
-Theme Name: WP_Blank
-Theme URI: http://businessonmarketst.com
-Description: A theme built for Wordpress Development, It is entirley blank
+Theme Name: Bonfun
+Theme URI: http://doyoubonfun.com
+Description: A theme built for Bonfun Cognac!
 Author: Nicholas Koskowski
 Author URI: http://businessonmarketst.com
 Version: 1.0
@@ -12,3 +12,231 @@ License URI: http://businessonmarketst.com
 
 General comments (optional).
 */
+
+html, body, img {
+	background:none;
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-image: url('images/main-bg.png');
+}
+
+.container {
+	min-width:480px;
+	max-width:960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Header Styles */
+
+.header {
+	float: left;
+	height:59px;
+	background-image: url('images/header-bg.png');
+	width:100%;
+}
+
+.logo {
+	float:left;
+	margin-top:10px;
+	background-image: url('images/logo.png');
+	background-repeat: no-repeat;
+	width:141px;
+	height:36px;
+}
+
+.nav-menu {
+	float:left;
+}
+
+.nav-menu ul {
+	float:left;
+	list-style: none;
+	font-size:12px;
+	color:#86182f;
+	text-transform: uppercase;
+	font-family:"Avenir LT W01 35 Light";
+}
+
+.nav-menu ul li {
+	float:left;
+	padding-left:16px;
+	padding-right:16px;
+	display:inline;
+	background-image:url('images/left-divider.png');
+}
+
+.nav-menu ul li:first-of-type {
+	padding-left:0px;
+}
+
+.nav-menu ul li:last-of-type {
+	padding-right:0px;
+}
+
+.social-media {
+	float:right;
+	margin-top:20px;
+}
+
+.pull {
+	display:none;
+	width:20px;
+	height:20px;
+	background-image: url('images/nav-icon.png');
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+
+/* Slider Area */
+
+
+
+.slider-area {
+	float:left;
+	width:100%;
+	background-color:#000;
+	background-size:100%;
+	top:59px;
+}
+
+.slider {
+	max-width:1400px;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 410px;
+}
+
+.slider ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+.slider ul li {
+	width:100%;
+}
+
+.slider ul li img {
+	width:100%;
+}
+
+/* Carousel */
+
+.flag {
+	position: absolute;
+	width:347px;
+	height: 409px;
+	background-image: url('images/flag.png');
+	margin-top:-415px;
+	margin-left:876px;
+}
+
+.carousel {
+	float:left;
+	width:280px;
+	height: 463px;
+	overflow:scroll;
+	margin-left:45px;
+	margin-top:80px;
+}
+
+
+/* Process Area */
+
+.process-area {
+	width:100%;
+	height:161px;
+	background-image: url('images/seperator.png');
+	float:left;
+	text-align: center;
+}
+
+.process-area img {
+	margin-top:25px;
+}
+
+
+/* Responsive Design BreakPoints */
+
+
+@media (max-width: 1200px) {
+	.flag {
+		display:none;
+	}
+}
+
+
+@media (min-width: 1200px) { 
+	.slider {
+		max-width: auto;
+		min-width:1400px;
+	}
+}
+
+@media (max-width: 750px) {
+
+	.pull {
+		display:block;
+	}
+
+	.header {
+		position: fixed;
+		top:0px;
+		width:100%;
+		height:39px;
+		background-image: none;
+		background-color:#861930;
+	}
+
+	.logo {
+		background-image:url('images/logo-alt.png');
+		margin-top:0px;
+		margin-left:20px;
+	}
+
+	.social-media {
+		display: none;
+	}
+
+	.nav-menu {
+	float:right;
+	width:100%;
+	background-color:#861930;
+	display:none;
+	}
+
+	.nav-menu ul {
+		width:100%;
+		margin:0px;
+		padding-left: 10px;
+		padding:0px;
+	}
+
+	.nav-menu ul li {
+		float:none;
+		display: block;
+		color:#fff;
+		padding:0px;
+		padding-top:5px;
+		padding-bottom: 5px;
+		padding-left:25px;
+		width:100%;
+		border-top:1px rgba(131, 91, 100, 0.50);
+		border-bottom:1px solid rgba(131, 91, 100, 0.50);
+		background-color:#861930;	
+	}
+
+	.nav-menu ul li:first-of-type {
+		padding-left:25px;
+	}
+
+}
