@@ -164,6 +164,23 @@ body {
 	margin-top:25px;
 }
 
+.process-button {
+	position: relative;
+	z-index:2000;
+}
+
+.process-content {
+	display: none;
+	position: relative;
+	z-index:1000;
+	float:left;
+	width:100%;
+	height:395px;
+	border-top:10px solid #77152a;
+	margin-top:-85px;
+	background-image:url('images/slider-bg.png');
+}
+
 
 /********************************************
 DAN STYLES 
