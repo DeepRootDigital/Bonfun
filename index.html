@@ -3,35 +3,35 @@
 <head>
 	<title>test</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/59138cf6-6f30-458d-ba53-73aa9b77f73d.css"/>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/Jcarousel.js"></script>
 	<script>
-	$(document).ready(function(){
-		$('.pull').click(function() {
-			$('.nav-menu').toggle();
-		});
+		$(document).ready(function(){
+			$('.pull').click(function() {
+				$('.nav-menu').toggle();
+			});
 
-		$('.process-button').click(function() {
-			$('.process-content').toggle();
-		});
+			$('.process-button').click(function() {
+				$('.process-content').css("display","block");
+				$('.process-content').animate({"height":"395px"},1000);
+				$('.container').css("display","block");
+				$('.grid-area').css('margin-top','0px');
+			});
 
-		$(window).scroll(function () {
-			$('.process-content').show();
+			$(".carousel").CloudCarousel(		
+			{			
+				xPos: 128,
+				yPos: 32,
+				xRadius: 52,
+				yRadius: 32,
+				autoRotate: 'left',
+				autoRotateDelay: 3000,
+				bringToFront: true,
+			});
 		});
-
-		$(".carousel").CloudCarousel(		
-		{			
-			xPos: 128,
-			yPos: 32,
-			xRadius: 52,
-			yRadius: 32,
-			autoRotate: 'left',
-			autoRotateDelay: 3000,
-			bringToFront: true,
-		});
-	});
 
 	</script>
 </head>
@@ -82,11 +82,90 @@
 	<div class="process-content">
 		<div class="container">
 			<div class="process-navigation">
+				<div class="process one">1</div>
+				<div class="process two">2</div>
+				<div class="process three">3</div>
+				<div class="process four">4</div>
+				<div class="process five">5</div>
+				<img src="images/process-history-icon.png" class="process-history-icon process-icon" />
+				<img src="images/process-growth-icon.png" class="process-growth-icon process-icon" />
+				<img src="images/process-distillation-icon.png" class="process-distillation-icon process-icon" />
+				<img src="images/process-aging-icon.png" class="process-aging-icon process-icon" />
+				<img src="images/process-infusion-icon.png" class="process-infusion-icon process-icon" />
 			</div>
 			<div class="process-panel">
-				<img src="">
-				<h2>The History of Our Cognac</h2>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+			</div>
+		</div>
+	</div>
+	<div class="grid-area">
+		<div class="grid-wrapper">
+			<div class="grid-row">
+				<div class="grid-box-half grid-box">
+					<img src="images/Grid-Images/image1.png" />
+					<div class="grid-cover-tall-red grid-cover">
+						<h2>Circle of Fun</h2>
+						<div class="dotted-shadow">
+							<ul>
+								<li>Socialize /</li>
+								<li>Party /</li>
+								<li>Meet other bonfun fans /</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="grid-box-sixth">
+					<img src="images/Grid-Images/image2.png" />
+					<div class="grid-cover-short-orange grid-cover-vert">
+						<h2>Infusions</h2>
+					</div>
+				</div>
+				<div class="grid-box-twosixth">
+					<img src="images/Grid-Images/image3.png" />
+					<div class="grid-cover-wide-red grid-cover-vert">
+						<h2>Store Locator</h2>
+					</div>
+				</div>
+			</div>
+			<div class="grid-row">
+				<div class="grid-box-twosixth">
+					<img src="images/Grid-Images/image4.png" />
+					<div class="grid-cover-wide-orange grid-cover-vert">
+						<h2>Cognac Grapes</h2>
+					</div>
+				</div>
+				<div class="grid-box-sixth">
+					<img src="images/Grid-Images/image5.png" />
+					<div class="grid-cover-short-red grid-cover-vert">
+						<h2>Cognac, France</h2>
+					</div>
+				</div>
+				<div class="grid-box-half">
+					<img src="images/Grid-Images/image6.png" />
+					<div class="grid-cover-tall-orange right grid-cover">
+						<h2>Fun Music</h2>
+					</div>
+				</div>
+			</div>
+			<div class="grid-row">
+				<div class="grid-box-half">
+					<img src="images/Grid-Images/image9.png" />
+					<div class="grid-cover-tall-red grid-cover">
+						<h2>How to Party</h2>
+					</div>
+					
+				</div>
+				<div class="grid-box-twosixth">
+					<img src="images/Grid-Images/image8.png" />
+					<div class="grid-cover-wide-orange grid-cover-vert">
+						<h2>Special Events</h2>
+					</div>
+				</div>
+				<div class="grid-box-sixth">
+					<img src="images/Grid-Images/image7.png" />
+					<div class="grid-cover-short-red grid-cover-vert">
+						<h2>Brand Ambassadors</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -193,19 +272,6 @@
 		<div class="footer-bottom-section"></div>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script type="text/javascript" src="function.js"></script>
 </body>
 </html>

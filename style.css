@@ -13,6 +13,14 @@ License URI: http://businessonmarketst.com
 General comments (optional).
 */
 
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
 html, body, img {
 	background:none;
 	border:none;
@@ -25,7 +33,7 @@ body {
 }
 
 .container {
-	min-width:480px;
+	min-width:201px;
 	max-width:960px;
 	margin-left: auto;
 	margin-right: auto;
@@ -60,18 +68,19 @@ body {
 	color:#86182f;
 	text-transform: uppercase;
 	font-family:"Avenir LT W01 35 Light";
+	padding-left: 20px;
 }
 
 .nav-menu ul li {
 	float:left;
-	padding-left:16px;
-	padding-right:16px;
+	padding-right:13px;
 	display:inline;
-	background-image:url('images/left-divider.png');
-}
-
-.nav-menu ul li:first-of-type {
-	padding-left:0px;
+	background-image:url('images/divider-left.png');
+	background-repeat:no-repeat;
+	height: 60px;
+	margin-top: -13px;
+	padding-top: 31px;
+	padding-left: 21px;
 }
 
 .nav-menu ul li:last-of-type {
@@ -155,7 +164,9 @@ body {
 .process-area {
 	width:100%;
 	height:161px;
-	background-image: url('images/seperator.png');
+	background-image: url('images/process-bar-top.png');
+	background-repeat: no-repeat;
+    background-size: 100% 75px;
 	float:left;
 	text-align: center;
 }
@@ -175,10 +186,260 @@ body {
 	z-index:1000;
 	float:left;
 	width:100%;
-	height:395px;
-	border-top:10px solid #77152a;
+	height:0px;
 	margin-top:-85px;
 	background-image:url('images/slider-bg.png');
+	border-top: 10px solid #741529;
+}
+
+.process-content > .container {
+	display:none;
+}
+
+.process {
+	color:white;
+	position:absolute;
+}
+
+.process.one{
+	top:13%;
+	left:437px;
+}
+
+.process.two{
+	top:29.8%;
+	left:391px;
+}
+
+.process.three{
+	top:47.6%;
+	left:347px;
+}
+
+.process.four{
+	top:64.4%;
+	left:303px;
+}
+
+.process.five{
+	top:82.3%;
+	left:258px;
+}
+
+.process-icon {
+	position:absolute;
+}
+
+.process-infusion-icon{
+	top:78.6%;
+	left:327px;
+}
+
+.process-aging-icon {
+	top:61.2%;
+	left:371px;
+}
+
+.process-distillation-icon {
+	top:43.8%;
+	left:416px;
+}
+
+.process-growth-icon {
+	top:26.4%;
+	left:460px;
+}
+
+.process-history-icon {
+	top:9%;
+	left:504px;
+}
+
+/********************************************
+Grid Area
+********************************************/
+
+.grid-area {
+	background-image:url('images/grid-background.png');
+	padding-bottom:28px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	float:left;
+	margin-top:-86px;
+}
+
+.grid-wrapper{
+	margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    margin-top:81px;	
+}
+
+.grid-row{
+	float:left;
+	width:100%;
+}
+
+.grid-row h2 {
+	font-family:'Avenir LT W01 65 Medium';
+	font-size:24px;
+	line-height:26px;
+	color:#ffffff;
+	margin-top:51px;
+	margin-left:20px;
+	width:75%;
+	padding-bottom: 16px;
+	text-transform:uppercase;
+}
+
+.grid-row ul {
+	border-top: 1px dotted #ae737f;
+	border-bottom:1px dotted #470b17;
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+.grid-row li {
+	margin-left: -40px;
+	font-family:'Avenir LT W01 35 Light';
+	font-size:18px;
+	line-height:26px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+.dotted-shadow {
+	border-top: 1px dotted #470b17;
+	border-bottom: 1px dotted #ae737f;
+	margin-top: -20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display:none;
+}
+
+.grid-box-half {
+	display:inline;
+	position:relative;
+	width:50%;
+	float: left;
+	margin-top:-4px;
+}
+
+.grid-box-sixth{
+	display:inline;
+	position:relative;
+	width:16.67%;
+	float: left;
+	margin-top:-4px;
+}
+
+.grid-box-twosixth{
+	display:inline;
+	position:relative;
+	width:33.33%;
+	float: left;
+	margin-top:-4px;
+}
+
+.grid-row img {
+	width:100%;
+	max-height:443px;
+}
+
+.grid-cover{
+	cursor:pointer;
+}
+
+.grid-cover-tall-red{
+	background-image:url('images/grid-cover-tall-red.png');
+	width:33.33%;
+	height:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.grid-cover-short-orange{
+	background-image:url('images/grid-cover-short-orange.png');
+	height:50%;
+	width:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.grid-cover-wide-red{
+	background-image:url('images/grid-cover-wide-red.png');
+	height:50%;
+	width:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.grid-cover-wide-orange{
+	background-image:url('images/grid-cover-wide-orange.png');
+	height:50%;
+	width:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.grid-cover-short-red{
+	background-image:url('images/grid-cover-short-red.png');
+	height:50%;
+	width:100%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.grid-cover-tall-orange{
+	background-image:url('images/grid-cover-tall-orange.png');
+	height:100%;
+	width:33.33%;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	top:0;
+}
+
+.right{
+	right:0;
+}
+
+@media (max-width: 480px) {
+	.grid-box-half {
+	display:inline;
+	width:100%;
+	float: left;
+	margin-top:-4px;
+}
+
+.grid-box-sixth{
+	display:inline;
+	width:33.33%;
+	float: left;
+	margin-top:-4px;
+}
+
+.grid-box-twosixth{
+	display:inline;
+	width:66.67%;
+	float: left;
+	margin-top:-4px;
+}
 }
 
 
@@ -376,7 +637,7 @@ DAN STYLES
 }
 
 .footer-bottom-section-divider {
-	margin: 0px 0 0 95px;
+	margin: 11px 0 0 95px;
 }
 
 .bottom-icons {
@@ -384,12 +645,14 @@ DAN STYLES
 	height: 50px;
 	position: relative;
 	margin-top:10px;
+	margin-right:47px;
 }
 
 .bottom-icons ul {
 	float: right;
-	margin: 0 0 0 10px;
+	margin: 12px 0 0 0px;
 	list-style-type: none;
+	padding-left:0;
 }
 
 .bottom-icons ul li {
@@ -443,6 +706,7 @@ DAN STYLES
 		height:39px;
 		background-image: none;
 		background-color:#861930;
+		z-index:9999999999;
 	}
 
 	.logo {
@@ -460,6 +724,7 @@ DAN STYLES
 		width:100%;
 		background-color:#861930;
 		display:none;
+		margin-top:16px;
 	}
 
 	.nav-menu ul {
@@ -474,7 +739,7 @@ DAN STYLES
 		display: block;
 		color:#fff;
 		padding:0px;
-		padding-top:5px;
+		padding-top:20px;
 		padding-bottom: 5px;
 		padding-left:25px;
 		width:100%;
