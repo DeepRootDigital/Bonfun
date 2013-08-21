@@ -18,4 +18,11 @@ $(document).ready(function(){
 		$(this).find(".dotted-shadow").css("display","none");
 		$(this).animate({"height":"50%"},500);	
 	});
+
+	$(".grid-cover").click(function(){
+		$(".grid-slideout").animate({'height':'0px'},500);
+		if ($(this).hasClass("grid-top-row")) {
+			$(".grid-top").animate({"height":"640px"},1000);
+		}
+	});
 });
