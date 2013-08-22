@@ -175,7 +175,7 @@ body {
 	display:none;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1200px) {
 	.slider ul li img {
 		position:relative;
 	}
@@ -425,7 +425,8 @@ body {
 	}
 
 	.process-panel{
-		position: absolute;
+		position: relative;
+		display:inline-block;
 		width: 100%;
 		height: 100%;
 		text-align: center;
@@ -976,7 +977,7 @@ DAN STYLES
 	float: left;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
 	.footer-bottom-section {
 		margin: -20px 0 0;
@@ -986,6 +987,153 @@ DAN STYLES
 		float: left;	
 	}
 
+}
+
+/**********************************
+ABOUT STYLES
+**********************************/
+
+.about-header {
+	width: 100%;
+	height: 411px;
+	background-image:url('images/aboutus-topbanner.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+.about-header img {
+	width: 100%;
+}
+
+.about-header h1{
+	font-size: 80px;
+	line-height: 76px;
+	width: 320px;
+	margin-left: 20%;
+	position: absolute;
+	margin-top: 108px;
+	color:#ffffff;
+}
+
+.about-container {
+	margin: -6px auto;
+	width: 960px;
+	height: 690px;
+}
+
+.aged-section {
+	float: left;
+	width: 480px;
+	height: 640px;
+}
+
+.aged-section h2 {
+	margin: 60px 0 0 30px;
+	font-family: avenir;
+	text-transform: uppercase;
+	font-size: 21px;
+	color: #494949;
+}
+
+.aged-section h2 span {
+	color: #f38900;
+}
+
+.aged-section img {
+	margin: -10px 0 0 10px;
+}
+
+.aged-section p {
+	margin: 0 0 20px 0;
+	font-family: avenir;
+	font-size: 16px;
+	padding: 0 30px 0 30px;
+	color: #494949;
+}
+
+.about-grid {
+	float: left;
+	width: 480px;
+	height: 640px;
+}
+
+.circle-of-fun {
+	width: 480px;
+	height: 320px;
+	background-image: url('images/circle-of-fun-background.png');
+	background-repeat: no-repeat;
+}
+
+.circle-of-fun-rollover {
+	width: 160px;
+	height: 320px;
+	background-image: url('images/circle-of-fun-rollover.png');
+	background-repeat: no-repeat;
+}
+
+.circle-of-fun-rollover p {
+	position: relative;
+	margin: 0 0 0 10px;
+	width: 80px;
+	top: 73px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-family: avenir;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.infusion {
+	float: left;
+	width: 160px;
+	height: 320px;
+	background-image: url('images/infusion.png');
+}
+
+.infusion-rollover {
+	width: 160px;
+	height: 160px;
+	background-image: url('images/infusion-rollover.png');
+}
+
+.infusion-rollover p {
+	position: relative;
+	top: 60px;
+	left: 10px;
+	margin: 0 0 0 0;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-family: avenir;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.about-store-locator {
+	float: left;
+	width: 320px;
+	height: 320px;
+	background-image: url('images/store-locator-back.png');
+}
+
+.store-locator-rollover {
+	width: 320px;
+	height: 160px;
+	background-image: url('images/store-locator-rollover.png');
+}
+
+.store-locator-rollover p {
+	position: relative;
+	top: 60px;
+	left: 20px;
+	margin: 0 0 0 0;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-family: avenir;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
 }
 
 
@@ -1044,7 +1192,7 @@ DAN STYLES
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 
 	.slider-area {
 		margin-top:39px;
@@ -1166,6 +1314,12 @@ DAN STYLES
 
 	.bottom-icons ul {
 		margin-top:8px;
+	}
+
+	.process-viewport{
+		overflow:hidden;
+		width: 100%;
+		height: 385px;
 	}
 
 
