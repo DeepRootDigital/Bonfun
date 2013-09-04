@@ -17,6 +17,8 @@ include get_template_directory() . '/autocracy/demo.php';
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
+wp_enqueue_script('jquery');
+
 /* Register Menu Areas */
 register_nav_menu('Header Nav - Left', 'Left Navigation Menu');
 

@@ -20,34 +20,35 @@
 			</div>
 		</div>
 
-		<div id="panel-wrap" class="process-panel-wrap">
-			<div class="process-panel">
-				<img src="">
-				<h3>THE HISTORY OF OUR COGNAC</h3>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
-			</div>
-			<div class="process-panel">
-				<img src="">
-				<h3>THE HISTORY OF OUR COGNAC</h3>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
-			</div>
-			<div class="process-panel">
-				<img src="">
-				<h3>THE HISTORY OF OUR COGNAC</h3>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
-			</div>
-			<div class="process-panel">
-				<img src="">
-				<h3>THE HISTORY OF OUR COGNAC</h3>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
-			</div>
-			<div class="process-panel">
-				<img src="">
-				<h3>THE HISTORY OF OUR COGNAC</h3>
-				<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+		<div id="panel-wrap" class="process-panel-wrap swipe">
+			<div class="swipe-wrap">
+				<div class="process-panel">
+					<img src="">
+					<h3>THE HISTORY OF OUR COGNAC</h3>
+					<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+				</div>
+				<div class="process-panel">
+					<img src="">
+					<h3>THE HISTORY OF OUR COGNAC</h3>
+					<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+				</div>
+				<div class="process-panel">
+					<img src="">
+					<h3>THE HISTORY OF OUR COGNAC</h3>
+					<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+				</div>
+				<div class="process-panel">
+					<img src="">
+					<h3>THE HISTORY OF OUR COGNAC</h3>
+					<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+				</div>
+				<div class="process-panel">
+					<img src="">
+					<h3>THE HISTORY OF OUR COGNAC</h3>
+					<p>Lorem ipsum dolor sit amet, an tempor inermis sapientem sed. Illum nostrud omittantur usu in, mea stet nibh veniam ne, no mundi consulatu pro. Harum accusata deseruisse ea vis.</p>
+				</div>
 			</div>
 		</div>
-
 
 	</div>
 </div>

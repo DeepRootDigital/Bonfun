@@ -98,10 +98,6 @@
 				<div class="footer-mobile-bonfun"></div>
 			</div>
 		</div>
-
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.10.3.custom.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.ui.touch.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 	</html>

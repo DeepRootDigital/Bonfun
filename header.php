@@ -7,10 +7,10 @@
 	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/59138cf6-6f30-458d-ba53-73aa9b77f73d.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/normalize.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
-	<!-- <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/59138cf6-6f30-458d-ba53-73aa9b77f73d.css"/> -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/Jcarousel.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/swipe.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.10.3.custom.js"></script>
 </head>
 <body>
 	<div class="header">

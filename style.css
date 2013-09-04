@@ -238,7 +238,6 @@ body {
 	margin-top:80px;
 }
 
-
 /* Process Area */
 
 .process-area {
@@ -291,13 +290,14 @@ body {
 
 .process-panel-wrap {
 	float:right;
-	max-width:480px;
+	max-width: 350px;
+	overflow: hidden;
 }
 
 .process-panel {
-	width:350px;
+	width:350px !important;
 	margin-top:60px;
-	float:left;
+	float:right;
 	position: relative;
 }
 
@@ -334,20 +334,20 @@ body {
 }
 
 .swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
 }
 .swipe-wrap {
-  overflow: hidden;
-  position: relative;
+	overflow: hidden;
+	position: relative;
+	width:350px !important;
 }
 .swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+	float:left;
+	width:100%;
+	position: relative;
 }
-
 
 /********************************************
 Grid Area
@@ -496,9 +496,7 @@ Grid Area
 		font-size:43px;
 	}
 
-
 }
-
 
 /********************************************
 DAN STYLES 
@@ -733,151 +731,158 @@ DAN STYLES
 
 }
 
-/**********************************
-ABOUT STYLES
-**********************************/
 
-.about-header {
-	width: 100%;
-	height: 411px;
-	background-image:url('images/aboutus-topbanner.png');
-	background-size:100% 100%;
-	background-repeat:no-repeat;
+/* Page Styles */
+
+.page-header {
+	float:left;
+	width:100%;
+	max-height:410px;
+	background-color:#7f4854;
+	opacity:.7;
+	overflow:hidden;
 }
 
-.about-header img {
-	width: 100%;
-}
-
-.about-header h1{
-	font-size: 80px;
-	line-height: 76px;
-	width: 320px;
-	margin-left: 20%;
+.page-header h2 {
+	text-transform: uppercase;
+	z-index:10000;
+	color:#fff;
+	font-family: 'Avenir LT W01 95 Black';
+	font-size:80px;
 	position: absolute;
-	margin-top: 108px;
-	color:#ffffff;
+	max-width:500px;
 }
 
-.about-container {
-	margin: -6px auto;
-	width: 960px;
-	height: 690px;
-}
-
-.aged-section {
-	float: left;
-	width: 480px;
-	height: 640px;
-}
-
-.aged-section h2 {
-	margin: 60px 0 0 30px;
-	font-family: avenir;
-	text-transform: uppercase;
-	font-size: 21px;
-	color: #494949;
-}
-
-.aged-section h2 span {
-	color: #f38900;
-}
-
-.aged-section img {
-	margin: -10px 0 0 10px;
-}
-
-.aged-section p {
-	margin: 0 0 20px 0;
-	font-family: avenir;
-	font-size: 16px;
-	padding: 0 30px 0 30px;
-	color: #494949;
-}
-
-.about-grid {
-	float: left;
-	width: 480px;
-	height: 640px;
-}
-
-.circle-of-fun {
-	width: 480px;
-	height: 320px;
-	background-image: url('images/circle-of-fun-background.png');
-	background-repeat: no-repeat;
-}
-
-.circle-of-fun-rollover {
-	width: 160px;
-	height: 320px;
-	background-image: url('images/circle-of-fun-rollover.png');
-	background-repeat: no-repeat;
-}
-
-.circle-of-fun-rollover p {
+.page-header img {
+	width:100%;
+	height:100%;
 	position: relative;
-	margin: 0 0 0 10px;
-	width: 80px;
-	top: 73px;
-	line-height: 20px;
+}
+
+.content-col {
+	float:left;
+	width: 605px;
+}
+
+.sidebar-col {
+	float:right;
+	width:310px;
+	margin-bottom: 55px;
+}
+
+.sidebar-wrap {
+	overflow: hidden;
+}
+
+.sidebar-widget {
+	background-image:url('images/sidebar-tex.png');
+	width:300px;
+	padding-left:25px;
+	padding-top: 30px;
+	float:left;
+}
+
+.sidebar-widget h3 {
+	font-size:21px;
 	text-transform: uppercase;
-	font-family: avenir;
-	font-size: 20px;
+	font-family:'Avenir LT W01 35 Light';
+	color:#494949;
+	padding-left:20px;
+	margin:0px;
+	font-weight: normal;
+
+}
+
+.sidebar-widget h3 span {
+	color:#f38900;
+	font-family: 'Avenir LT W01 95 Black';
+}
+
+.sidebar-widget img.divider {
+	float:left;
+	margin-left:-10px;
+}
+
+.sidebar-widget ul {
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	font-family: georgia;
+	font-weight: 13px;
+	color:#494949;
+}
+
+.sidebar-widget ul li {
+	border-bottom: 1px dotted #ccc;
+	width:300px;
+	height:70px;
+}
+
+.update-title {
 	font-weight: bold;
-	color: #fff;
+	float:left;
+	clear:right;
+	margin-right: 80px;
+}
+
+.update-title span {
+	font-weight: normal;
+	color: #838383;
+}
+
+.update-excerpt {
+	font-size: 13px;
+}
+
+.portrait {
+	float:left;
+	width:44px;
+	height: 44px;
+	border: 3px solid #fff;
+	margin-top:2px;
+	margin-right:10px;
 }
 
 .infusion {
 	float: left;
-	width: 160px;
-	height: 320px;
-	background-image: url('images/infusion.png');
+	margin-top:14px;
+	margin-bottom: 14px;
 }
 
-.infusion-rollover {
-	width: 160px;
-	height: 160px;
-	background-image: url('images/infusion-rollover.png');
-}
-
-.infusion-rollover p {
-	position: relative;
-	top: 60px;
-	left: 10px;
-	margin: 0 0 0 0;
-	line-height: 20px;
-	text-transform: uppercase;
-	font-family: avenir;
-	font-size: 20px;
-	font-weight: bold;
-	color: #fff;
-}
-
-.about-store-locator {
+.infusion .bottle-img {
+	width:30px;
+	height:135px;
 	float: left;
-	width: 320px;
-	height: 320px;
-	background-image: url('images/store-locator-back.png');
+	margin-right: 15px;
 }
 
-.store-locator-rollover {
-	width: 320px;
-	height: 160px;
-	background-image: url('images/store-locator-rollover.png');
-}
-
-.store-locator-rollover p {
-	position: relative;
-	top: 60px;
-	left: 20px;
-	margin: 0 0 0 0;
-	line-height: 20px;
+.infusion h4 {
+	font-weight: normal;
 	text-transform: uppercase;
-	font-family: avenir;
-	font-size: 20px;
-	font-weight: bold;
-	color: #fff;
+	font-size: 16px;
+	font-family:'Avenir LT W01 45 Book';
+	color:#86182f;
+	margin:0px;
+	margin-bottom:5px;
+	float:left;
+}
+
+.sidebar-widget .infusion img.divider {
+	float:left;
+	margin-left: 0px;
+	margin-bottom:10px;
+}
+
+.infusion p {
+	font-family: georgia;
+	font-size: 14px;
+	max-width: 235px;
+	line-height: 18px;
+}
+
+.go-button {
+	position: absolute;
+	margin-left: 116px;
 }
 
 

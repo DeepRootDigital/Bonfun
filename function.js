@@ -1,4 +1,6 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
+
+	var $ = jQuery;
 
 	$('.pull').click(function() {
 		$('.nav-menu').toggle();
