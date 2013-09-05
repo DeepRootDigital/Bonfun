@@ -94,6 +94,11 @@ body {
 	padding-left: 21px;
 }
 
+.nav-menu a {
+	text-decoration: none;
+	color:#86182f;
+}
+
 .nav-menu ul li:last-of-type {
 	padding-right:0px;
 }
@@ -284,7 +289,7 @@ body {
 	background-image:url('images/process-icon.png');
 }
 
-.action-button:active, .action-button:hover {
+.action-button:active, .action-button:hover, .action-button.active {
 	background-image:url('images/process-icon-selected.png');
 }
 
@@ -761,14 +766,74 @@ DAN STYLES
 
 .content-col {
 	float:left;
-	width: 605px;
+	width: 560px;
 }
+
+/* Blog Styles */
+
+.blog-col {
+	float:left;
+	width:560px;
+	margin-top:30px;
+}
+
+.blog-post h2 {
+	font-size: 21px;
+	font-family: 'Avenir LT W01 95 Black';
+	font-weight: normal;
+	text-transform: uppercase;
+	color:#86182f;
+	display:inline;
+	padding-left: 18px;
+}
+
+.post-meta {
+	font-family:'Avenir LT W01 35 Light';
+	font-size:14px;
+	text-transform: uppercase;
+	color:#494949;
+	height:25px;
+	float:right;
+	padding-top:7px;
+}
+
+.featured-image {
+	width: 100%;
+	text-align: center;
+}
+
+.featured-image img {
+	width:540px;
+	height:300px;
+	text-align: center;
+	border:10px solid #fff;
+}
+
+.post-content {
+	max-width: 440px;
+	margin-left:18px;
+	float: left;
+	font-family:'Avenir LT W01 35 Light';
+	font-size:16px;
+	line-height: 25px;
+}
+
+.blog-post .go-button {
+	float:left;
+	position: relative;
+	margin: 0px;
+	margin-left: 436px;
+	margin-top: -70px;
+}
+
+/* Sidebar Styles */
 
 .sidebar-col {
 	float:right;
 	width:310px;
 	margin-bottom: 55px;
 }
+
 
 .sidebar-wrap {
 	overflow: hidden;

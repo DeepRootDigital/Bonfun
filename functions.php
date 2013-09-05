@@ -20,7 +20,7 @@ add_theme_support('post-thumbnails');
 wp_enqueue_script('jquery');
 
 /* Register Menu Areas */
-register_nav_menu('Header Nav - Left', 'Left Navigation Menu');
+register_nav_menu('Header Nav', 'Navigation Menu');
 
 function autoc_get_img($id) {
 
@@ -46,6 +46,11 @@ function autoc_get_img($id) {
 	}
 
 }
+
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /* Register Custom Post Types */
 

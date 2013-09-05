@@ -20,13 +20,7 @@
 			<div class="pull">
 			</div>
 			<div class="nav-menu">
-				<ul id="nav">
-					<li><a>Events</a></li>
-					<li><a>Get Social</a></li>
-					<li><a>Store Locator</a></li>
-					<li><a>Products</a></li>
-					<li><a>Blog</a></li>
-				</ul>
+				<?php wp_nav_menu(array('theme_location' => 'Header Nav',)); ?>
 			</div>
 			<div class="social-media">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="instagram">
