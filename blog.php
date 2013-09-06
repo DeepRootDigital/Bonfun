@@ -35,9 +35,9 @@ Template Name: Blog Page
 			<div class="post-content">
 				<?php the_excerpt(); ?>
 			</div>
-			<img class="go-button" src="<?php echo get_template_directory_uri(); ?>/images/go-button.png">
+			<a href="<?php the_permalink(); ?>"><img class="go-button" src="<?php echo get_template_directory_uri(); ?>/images/go-button.png"></a>
 		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/images/blog-post-divider.png">
+		<img class="divider" src="<?php echo get_template_directory_uri(); ?>/images/blog-post-divider.png">
 	<?php endwhile; ?>
 </div>
 <div class="sidebar-col">

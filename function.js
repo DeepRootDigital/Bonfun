@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
 	{			
 		xPos: 128,
 		yPos: 32,
-		xRadius: 52,
+		xRadius: 75,
 		yRadius: 32,
 		autoRotate: 'left',
 		autoRotateDelay: 3000,
@@ -50,8 +50,10 @@ jQuery(document).ready(function(){
 		else {
 			$(this).removeClass('active');
 		}
-		$('.process-panel').fadeOut();
-		$('.process-panel.history').fadeIn();
+		$('.process-panel').animate({"marginTop":"400px"},200);
+		$('.process-panel').fadeOut('fast');
+		$('.process-panel.history').fadeIn('fast');
+		$('.process-panel').animate({"marginTop":"60px"},200);
 	});
 
 	$('.action-button.growth').click(function() {
@@ -62,8 +64,10 @@ jQuery(document).ready(function(){
 		else {
 			$(this).removeClass('active');
 		}
-		$('.process-panel').fadeOut();
-		$('.process-panel.growth').fadeIn();
+		$('.process-panel').animate({"marginTop":"400px"},200);
+		$('.process-panel').fadeOut('fast');
+		$('.process-panel.growth').fadeIn('fast');
+		$('.process-panel').animate({"marginTop":"60px"},200);
 	});
 
 	$('.action-button.distillation').click(function() {
@@ -74,8 +78,10 @@ jQuery(document).ready(function(){
 		else {
 			$(this).removeClass('active');
 		}
-		$('.process-panel').fadeOut();
-		$('.process-panel.distillation').fadeIn();
+		$('.process-panel').animate({"marginTop":"400px"},200);
+		$('.process-panel').fadeOut('fast');
+		$('.process-panel.distillation').fadeIn('fast');
+		$('.process-panel').animate({"marginTop":"60px"},200);
 	});
 
 	$('.action-button.aging').click(function() {
@@ -86,8 +92,10 @@ jQuery(document).ready(function(){
 		else {
 			$(this).removeClass('active');
 		}
-		$('.process-panel').fadeOut();
-		$('.process-panel.aging').fadeIn();
+		$('.process-panel').animate({"marginTop":"400px"},200);
+		$('.process-panel').fadeOut('fast');
+		$('.process-panel.aging').fadeIn('fast');
+		$('.process-panel').animate({"marginTop":"60px"},200);
 	});
 
 	$('.action-button.wine').click(function() {
@@ -98,8 +106,10 @@ jQuery(document).ready(function(){
 		else {
 			$(this).removeClass('active');
 		}
-		$('.process-panel').fadeOut();
-		$('.process-panel.wine').fadeIn();
+		$('.process-panel').animate({"marginTop":"400px"},200);
+		$('.process-panel').fadeOut('fast');
+		$('.process-panel.wine').fadeIn('fast');
+		$('.process-panel').animate({"marginTop":"60px"},200);
 	});
 
 
@@ -147,6 +157,11 @@ $('.grid-overlay').hover(
 			$(this).animate({height: ogHeight},100);
 		}		
 	});
+
+$('.grid-overlay').click(function() {
+	$(this).animate({width:'100%'});
+	$(this).animate({height:'100%'});
+});
 
 
 $('.grid-object.left').click(function() {

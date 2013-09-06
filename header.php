@@ -15,8 +15,10 @@
 <body>
 	<div class="header">
 		<div class="header-container">
-			<div class="logo">
-			</div>
+			<a href="<?php echo get_site_url(); ?>">
+				<div class="logo">
+				</div>
+			</a>
 			<div class="pull">
 			</div>
 			<div class="nav-menu">
