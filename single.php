@@ -1,14 +1,10 @@
-<?php
-/*
-Template Name: Blog Page
-*/
-?>
 <?php get_header(); ?>
-<div class="page-header">
+<div class="page-header single-blog blogsummary singleblog">
+	<div class="page-header-image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/aboutus-topbanner.png');">
+	</div>
 	<div class="container">
 		<h2>Cognac is our passion</h2>
 	</div>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/aboutus-topbanner.png">
 </div>
 <div class="container">
 	<div class="blog-col">
@@ -23,7 +19,7 @@ Template Name: Blog Page
 				BY <?php the_author(); ?> | <?php the_date(); ?>
 			</div>
 			<img class="divider" src="<?php echo get_template_directory_uri(); ?>/images/blog-title-divider.png">
-			<div class="featured-image">
+			<div class="featured-image large-feature">
 				<?php
 				if ( has_post_thumbnail() ) {
 					the_post_thumbnail();

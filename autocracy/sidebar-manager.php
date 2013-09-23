@@ -16,130 +16,73 @@ function sidebar_theme_options_do_page() {
         <?php if (false !== $_REQUEST['settings-updated']) : ?>
         <div class="updated fade"><p><strong><?php _e('Options saved', 'sampletheme'); ?></strong></p></div>
     <?php endif; ?>
-
     <form method="post" action="options.php">
         <?php settings_fields('sidebar_options'); ?>
         <?php $sidebaroptions = get_option('sidebar_theme_options'); ?>
-        <table class="form-table">
-            <th><h3>Pane 1</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane1title]" value="<?php esc_attr_e($sidebaroptions['pane1title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane1text]" class="large-text" style="height:130px; width:375px;" name="sidebar_theme_options[pane1text]"><?php echo esc_textarea($sidebaroptions['pane1text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane1link]" value="<?php esc_attr_e($sidebaroptions['pane1link']); ?>" />
-                </td>
-            </tr>
-            <th><h3>Pane 2</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane2title]" value="<?php esc_attr_e($sidebaroptions['pane2title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane2text]" class="large-text" style="height:230px; width:375px;" name="sidebar_theme_options[pane2text]"><?php echo esc_textarea($sidebaroptions['pane2text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane2link]" value="<?php esc_attr_e($sidebaroptions['pane2link']); ?>" />
-                </td>
-            </tr>
-            <th><h3>Pane 3</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane3title]" value="<?php esc_attr_e($sidebaroptions['pane3title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane3text]" class="large-text" style="height:230px; width:375px;" name="sidebar_theme_options[pane3text]"><?php echo esc_textarea($sidebaroptions['pane3text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane3link]" value="<?php esc_attr_e($sidebaroptions['pane3link']); ?>" />
-                </td>
-            </tr>
-            <th><h3>Pane 4</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane4title]" value="<?php esc_attr_e($sidebaroptions['pane4title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane4text]" class="large-text" style="height:230px; width:375px;" name="sidebar_theme_options[pane4text]"><?php echo esc_textarea($sidebaroptions['pane4text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane4link]" value="<?php esc_attr_e($sidebaroptions['pane4link']); ?>" />
-                </td>
-            </tr>
-            <th><h3>Pane 5</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane5title]" value="<?php esc_attr_e($sidebaroptions['pane5title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane5text]" class="large-text" style="height:230px; width:375px;" name="sidebar_theme_options[pane5text]"><?php echo esc_textarea($sidebaroptions['pane5text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane5link]" value="<?php esc_attr_e($sidebaroptions['pane5link']); ?>" />
-                </td>
-            </tr>
-            <th><h3>Pane 6</h3></th>
-            <tr valign="top">
-                <td>Pane Title</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane6title]" value="<?php esc_attr_e($sidebaroptions['pane6title']); ?>" />
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Text</td>
-                <td>
-                     <textarea id="sidebar_theme_options[pane6text]" class="large-text" style="height:230px; width:375px;" name="sidebar_theme_options[pane6text]"><?php echo esc_textarea($sidebaroptions['pane6text']); ?></textarea>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td>Pane Link</td>
-                <td>
-                    <input type="text" size="36" name="sidebar_theme_options[pane6link]" value="<?php esc_attr_e($sidebaroptions['pane6link']); ?>" />
-                </td>
-            </tr>
-        </table>
-        <p class="submit">
-            <input type="submit" class="button-primary" value="<?php _e('Save Options', 'sampletheme'); ?>" />
-        </p>
-    </form>
+        <div class="control">
+            <div>Infusion 1 - Title</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion1title]" value="<?php esc_attr_e($sidebaroptions['infusion1title']); ?>" />
+        </div>
+        <div class="control">
+            <div>Infusion 1 - Image</div>
+            <label for="upload_image">
+                <input class="upload_image" type="text" size="36" name="sidebar_theme_options[infusion1image]" value="<?php esc_attr_e($sidebaroptions['infusion1image']); ?>" />
+                <input  class="upload_image_button" type="button" value="Upload Image" />
+                <br />Enter an URL or upload an image.
+            </label>
+        </div>
+        <div class="control">
+         <div>Infusion 1 - Content</div>
+         <textarea id="sidebar_theme_options[infusion1content]" class="large-text" style="height:130px; width:375px;" name="sidebar_theme_options[infusion1content]"><?php echo esc_textarea($sidebaroptions['infusion1content']); ?></textarea>
+        </div>
+         <div class="control">
+            <div>Infusion 1 - Link</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion1link]" value="<?php esc_attr_e($sidebaroptions['infusion1link']); ?>" />
+        </div>
+        <div class="control">
+            <div>Infusion 2 - Title</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion2title]" value="<?php esc_attr_e($sidebaroptions['infusion2title']); ?>" />
+        </div>
+        <div class="control">
+            <div>Infusion 2 - Image</div>
+            <label for="upload_image">
+                <input class="upload_image" type="text" size="36" name="sidebar_theme_options[infusion2image]" value="<?php esc_attr_e($sidebaroptions['infusion2image']); ?>" />
+                <input  class="upload_image_button" type="button" value="Upload Image" />
+                <br />Enter an URL or upload an image.
+            </label>
+        </div>
+        <div class="control">
+         <div>Infusion 2 - Content</div>
+         <textarea id="sidebar_theme_options[infusion2content]" class="large-text" style="height:130px; width:375px;" name="sidebar_theme_options[infusion2content]"><?php echo esc_textarea($sidebaroptions['infusion2content']); ?></textarea>
+        </div>
+         <div class="control">
+            <div>Infusion 2 - Link</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion2link]" value="<?php esc_attr_e($sidebaroptions['infusion2link']); ?>" />
+        </div>
+        <div class="control">
+            <div>Infusion 3 - Title</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion3title]" value="<?php esc_attr_e($sidebaroptions['infusion3title']); ?>" />
+        </div>
+        <div class="control">
+            <div>Infusion 3 - Image</div>
+            <label for="upload_image">
+                <input class="upload_image" type="text" size="36" name="sidebar_theme_options[infusion3image]" value="<?php esc_attr_e($sidebaroptions['infusion3image']); ?>" />
+                <input  class="upload_image_button" type="button" value="Upload Image" />
+                <br />Enter an URL or upload an image.
+            </label>
+        </div>
+        <div class="control">
+         <div>Infusion 3 - Content</div>
+         <textarea id="sidebar_theme_options[infusion3content]" class="large-text" style="height:130px; width:375px;" name="sidebar_theme_options[infusion3content]"><?php echo esc_textarea($sidebaroptions['infusion3content']); ?></textarea>
+        </div>
+         <div class="control">
+            <div>Infusion 3 - Link</div>
+            <input type="text" size="36" name="sidebar_theme_options[infusion3link]" value="<?php esc_attr_e($sidebaroptions['infusion3link']); ?>" />
+        </div>
+     <p class="submit">
+        <input type="submit" class="button-primary" value="<?php _e('Save Options', 'sampletheme'); ?>" />
+    </p>
+</form>
 
 </div>
 <?php

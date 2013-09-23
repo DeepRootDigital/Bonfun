@@ -52,6 +52,12 @@ function main_theme_options_do_page() {
                         <input type="text" size="36" name="main_theme_options[gglplusurl]" value="<?php esc_attr_e($mainoptions['gglplusurl']); ?>" />
                     </td>
                 </tr>
+ <tr valign="top">
+                    <td>Instagram URL</td>
+                    <td>
+                        <input type="text" size="36" name="main_theme_options[instagramurl]" value="<?php esc_attr_e($mainoptions['instagramurl']); ?>" />
+                    </td>
+                </tr>
                 <th><h3>Footer Options</h3></th>
                 <tr valign="top">
                     <td>

@@ -55,6 +55,56 @@ $meta_boxes[] = array(
      ),
     );
 
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'products',
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'Products',
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array('products'),
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+    // List of meta fields
+    'fields' => array(
+array(
+        'name' => 'Top Text Title',
+        'id' => 'products_toptexttitle',
+        'type' => 'text',
+        ),
+      array(
+        'name' => 'Top Text',
+        'desc' => "",
+        'id' => "products_toptext",
+        'type' => 'wysiwyg',
+        'std' => "",
+        'cols' => '20',
+        'rows' => '8',
+        ),
+array(
+        'name' => 'Second Text Title',
+        'id' => 'products_secondtexttitle',
+        'type' => 'text',
+        ),
+      array(
+        'name' => 'Second Text',
+        'desc' => "",
+        'id' => "products_secondtext",
+        'type' => 'wysiwyg',
+        'std' => "",
+        'cols' => '20',
+        'rows' => '8',
+        ),
+array(
+            'name'             => 'Wine Image',
+            'id'               => "wineimage",
+            'type'             => 'plupload_image',
+            'max_file_uploads' => 1,
+            ),
+      ),
+    );
+
 
 /* * ******************* META BOX REGISTERING ********************** */
 

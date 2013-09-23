@@ -24,29 +24,78 @@ function theme_options_do_page() {
             <!--******************-->
             <!-- HOMEPAGE CONTENT -->
             <!--******************-->
-            <h1 style="margin-top:30px">Business On Market St Content</h1>
-            <h3>Turn Display Models On -</h3>
+            <h3>Fader TypeSettings</h3>
+            <p>Use SPAN codes to set the type to orange, the last SPAN of the content block becomes the large white word.</p>
             <tr valign="top">
-                <th scope="row">Case Studies:</th>
                 <td>
-                    <input id="sample_theme_options[casestudies]" name="sample_theme_options[casestudies]" type="checkbox" value="1" <?php checked( '1', $options['casestudies'] ); ?> />
-                    <label class="description" for="sample_theme_options[casestudies]"></label>
+                    <h3>Slide 1:</h3>
+                    <textarea id="sample_theme_options[slide-1]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[slide-1]"><?php echo esc_textarea($options['slide-1']); ?></textarea>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <h3>Slide 2:</h3>
+                    <textarea id="sample_theme_options[slide-2]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[slide-2]"><?php echo esc_textarea($options['slide-2']); ?></textarea>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <h3>Slide 3:</h3>
+                    <textarea id="sample_theme_options[slide-3]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[slide-3]"><?php echo esc_textarea($options['slide-3']); ?></textarea>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <h3>Slide 4:</h3>
+                    <textarea id="sample_theme_options[slide-4]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[slide-4]"><?php echo esc_textarea($options['slide-4']); ?></textarea>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <h3>Slide 5:</h3>
+                    <textarea id="sample_theme_options[slide-5]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[slide-5]"><?php echo esc_textarea($options['slide-5']); ?></textarea>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <h3>Carousel Bottle Images</h3>
+                    <label for="upload_image">
+                        Image 1:
+                        <input class="upload_image" type="text" size="36" name="sample_theme_options[carouselimage1]" value="<?php esc_attr_e($options['carouselimage1']); ?>" />
+                        <input  class="upload_image_button" type="button" value="Upload Image" />
+                        <br />Enter an URL or upload an image.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <label for="upload_image">
+                        Image 2:
+                        <input class="upload_image" type="text" size="36" name="sample_theme_options[carouselimage2]" value="<?php esc_attr_e($options['carouselimage2']); ?>" />
+                        <input  class="upload_image_button" type="button" value="Upload Image" />
+                        <br />Enter an URL or upload an image.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <label for="upload_image">
+                        Image 3:
+                        <input class="upload_image" type="text" size="36" name="sample_theme_options[carouselimage3]" value="<?php esc_attr_e($options['carouselimage3']); ?>" />
+                        <input  class="upload_image_button" type="button" value="Upload Image" />
+                        <br />Enter an URL or upload an image.
+                    </label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <h3>Homepage Content Area 1</h3>
-                    <h4>Content Title</h4>
-                    <input type="text" size="36" name="sample_theme_options[hp-content-title]" value="<?php esc_attr_e($options['hp-content-title']); ?>" />                 
-                    <h4>Content Text:</h4>
-                    <textarea id="sample_theme_options[hp-content]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[hp-content]"><?php echo esc_textarea($options['hp-content']); ?></textarea>
-                    <p class="submit">
-                        <input type="submit" class="button-primary" value="<?php _e('Save Options', 'sampletheme'); ?>" />
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </form>
+                  <p class="submit">
+                    <input type="submit" class="button-primary" value="<?php _e('Save Options', 'sampletheme'); ?>" />
+                </p>
+            </td>
+        </tr>
+    </table>
+</form>
 </div>
 <?php
 }

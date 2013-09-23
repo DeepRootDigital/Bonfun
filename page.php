@@ -1,9 +1,10 @@
 <?php get_header(); ?>
-<div class="page-header">
+<div class="page-header aboutus-page blogsummary">
 	<div class="container">
-		<h2>Cognac is our passion</h2>
+		<h2><?php the_title(); ?></h2>
 	</div>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/aboutus-topbanner.png">
+	<div class="page-header-image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/aboutus-topbanner.png');">
+	</div>
 </div>
 <div class="container">
 	<div class="content-col">

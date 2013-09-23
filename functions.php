@@ -5,7 +5,8 @@ require_once ( get_template_directory() . '/autocracy/autocracy.php' );
 require_once ( get_template_directory() . '/autocracy/homepage-manager.php' );
 require_once ( get_template_directory() . '/autocracy/sidebar-manager.php' );
 require_once ( get_template_directory() . '/autocracy/theme-manager.php' );
-require_once ( get_template_directory() . '/autocracy/service-manager.php' );
+require_once ( get_template_directory() . '/autocracy/grid-manager.php' );
+require_once ( get_template_directory() . '/autocracy/process-manager.php' );
 // Re-define meta box path and URL
 define('RWMB_URL', trailingslashit(get_stylesheet_directory_uri() . '/autocracy/API/'));
 define('RWMB_DIR', trailingslashit(get_template_directory() . '/autocracy/API/'));
@@ -17,10 +18,12 @@ include get_template_directory() . '/autocracy/demo.php';
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
+/* Script Enquque */
 wp_enqueue_script('jquery');
 
 /* Register Menu Areas */
 register_nav_menu('Header Nav', 'Navigation Menu');
+register_nav_menu('Footer Nav', 'Footer Navigation Menu');
 
 function autoc_get_img($id) {
 
@@ -53,20 +56,42 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /* Register Custom Post Types */
-
 function create_post_type() {
-	register_post_type('Process', array(
+	register_post_type('products', array(
 		'labels' => array(
-			'name' => __('Process'),
-			'singular_name' => __('Processes')
+			'name' => __('products'),
+			'singular_name' => __('product')
 			),
 		'public' => true,
-		'has_archive' => false,
-		'rewrite' => array('slug' => 'Process'),
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'products'),
 		)
 	);
 }
 add_action('init', 'create_post_type');
 
+/* Add a widget area */
 
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Footer Events',
+		'id' => 'footer_events',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+register_sidebar( array(
+		'name' => 'Social Sidebar Events',
+		'id' => 'social_events',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+        register_sidebar( array(
+		'name' => 'Slider Events',
+		'id' => 'slider_events',
+'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 ?>
